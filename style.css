@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* My colors location */
+:root{
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+}
+
+body{
+    background: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main{
+    text-align: center;
+}
+
+/* image styling */
+.hero-image {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+/* text container styling */
+.text-container{
+    background-color: var(--Very-pale-blue);
+    padding-bottom: 40px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Heading one styling */
+.order-summary{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+/* paragraph styling */
+.para1{
+    color: var(--Desaturated-blue);
+    line-height: 1.5rem;
+}
+
+/* Annual plan part styling */
+.annual-plan {
+    display: flex;
+    margin: 40px 0;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.annual-plan img {
+    margin-left: 80px;
+    margin-right: 15px;
+}
+
+.annual-plan > p {
+    position: absolute;
+    left: 145px;
+    top: 60%;
+    color: var(--Desaturated-blue);
+    /* font-family: 'Red Hat Display', sans-serif; */
+    /* font-weight: 500; */
+}
+
+.annual-plan > a {
+    margin-left: 80px;
+    margin-top: 10px;
+    color: var(--Bright-blue);
+}
+
+.annual-plan > a:hover{
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+/* Button styling */
+
+.btn-proceed{
+    /* width: 80%; */
+    padding: 9px 80px;
+    background: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-family:'Red Hat Display', sans-serif ;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.btn-proceed:hover{
+    background: var(--Desaturated-blue);
+}
+
+.btn-cancel{
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.btn-cancel:hover{
+    color: var(--Dark-blue);
+}
+
+
+/* @media query responsiveness */
+
+/* Phones responsiveness */
+
+@media screen and (max-width: 480px) {
+    main{
+        width: 80%;
+    }
+    main > img {
+        width: 100%;
+    }
+
+    .annual-plan{
+
+        padding: 10px 0;
+    }
+
+    .annual-plan > img {
+        margin-left: 20px;
+    }
+
+    .annual-plan > h3{
+        font-size: 15px;
+    }
+
+    .annual-plan > p{
+        left: 83px;
+    }
+
+    .annual-plan > a{
+        margin-right: 20px;
+    }
+}
+
+
